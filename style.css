@@ -216,7 +216,7 @@ footer {
 .list-container img {
   height: 100%;
   width: 25%;
-  object-fit: contain;
+  object-fit: cover;
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
