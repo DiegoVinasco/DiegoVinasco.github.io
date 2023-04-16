@@ -54,6 +54,10 @@ section h2 {
   margin: 10px 0px 10px 0px;
 }
 
+ul a {
+  color: #ffcc00;
+}
+
 footer {
   background-color: #333;
   color: white;
@@ -105,7 +109,7 @@ footer {
   transition: all 0.3s ease-in-out;
 }
 
-.container a {
+.container .button-link {
   color: white;
   background-color: #555;
   opacity: 0;
@@ -119,7 +123,7 @@ footer {
   transition: opacity 0.4s ease-in;
 }
 
-.container:hover a {
+.container:hover .button-link {
   opacity: 1;
 }
 
@@ -131,8 +135,8 @@ footer {
 /* Grid section styles */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .grid-container {
@@ -175,16 +179,16 @@ footer {
 }
 
 .grid-container-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.grid-container-overlay h2 {
+.grid-container-overlay h3 {
   margin: 0 auto 0 auto;
   color: #ffcc00;
   padding: 10px;
   width: 80%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -204,8 +208,15 @@ footer {
   flex-direction: column;
 }
 
-.list-container {
+.publication-container {
   height: 250px;
+}
+
+.experience-container {
+  height: fit-content;
+}
+
+.list-container {
   margin-bottom: 25px;
   display: flex;
   flex-direction: row;
@@ -232,7 +243,8 @@ footer {
 .list-container-overlay {
   width: 100%;
   height: 100%;
-  text-align: center;
+  padding: 10px 40px 10px 40px;
+  text-align: justify;
   background-color: rgba(0, 0, 0, 0.0);
   transition: background-color 0.2s ease-in-out;
   display: flex;
@@ -246,16 +258,23 @@ footer {
 
 .list-container-overlay p {
   margin-bottom: 20px;
-  padding: 0px 40px 0px 40px;
   font-size: large;
-  text-align: justify;
 }
 
-.list-container-overlay p span {
+.list-container-overlay h3 {
+  padding: 0 20px 0 20px;
+}
+
+.list-container-overlay li {
+  padding-bottom: 10px;
+}
+
+.list-container-overlay span {
   color: #ffcc00;
 }
 
-.list-container-overlay a {
+.list-container-overlay .button-link {
+  text-align: center;
   opacity: 1 ;
   margin-bottom: 20px;
 }
