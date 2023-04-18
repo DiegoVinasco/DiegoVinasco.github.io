@@ -3,6 +3,7 @@
   <head>
     <title>Diego Vinasco-Alvarez</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -26,10 +27,11 @@
           </p>
           <nav>
             <ul>
-              <li><a href="#projects">#Projects</a></li>
-              <li><a href="#publications">#Publications</a></li>
-              <li><a href="#experience">#Experience</a></li>
-              <!-- <li><a href="#presentations">#Presentations</a></li> -->
+              <li><a href="#projects" onclick="focusSection('projects')">#Projects</a></li>
+              <li><a href="#publications" onclick="focusSection('publications')">#Publications</a></li>
+              <li><a href="#experience" onclick="focusSection('experience')">#Experience</a></li>
+              <li><a href="#education" onclick="focusSection('education')">#Education</a></li>
+              <!-- <li><a href="#presentations" onclick="focusSection('presentations')">#Education"</a></li> -->
               <li>
                 <a class="icon" href="https://github.com/DiegoVinasco">
                   <img
@@ -60,11 +62,10 @@
                     src="logos/LI-In-Bug.png"
                     width="20"
                     height="20"
+                    style="background-color: white;"
                   />
                 </a>
               </li>
-              <!-- <div class="icons">
-              </div> -->
             </ul>
           </nav>
         </div>
@@ -131,7 +132,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section>      
       <section id="publications">
         <h2>Publications</h2>
         <div class="list">
@@ -214,7 +215,7 @@
             />
           </div>
         </div>
-      </section>
+      </section>      
       <section id="experience">
         <h2>Experience</h2>
         <div class="list">
@@ -313,8 +314,8 @@
                   skills and evaluate performance.
                 </li>
                 <li>
-                  Oversaw projects to integrate the legacy USA service desk to
-                  an international 24/7 service desk.
+                  Oversaw projects to integrate the legacy USA service desk to an
+                  international 24/7 service desk.
                 </li>
                 <li>
                   Manage ticket triage responses and Service Now knowledge base
@@ -322,6 +323,34 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="list">
+          <div class="experience-container list-container container">
+            <div class="list-container-overlay">
+              <h3><span>Master's degree in Industry 4.0</span> - September 2020</h3>
+              <h3>Université de Pau et des pays de l'Adour - Anglet, France</h3>
+            </div>
+          </div>
+        <div class="experience-container list-container container">
+          <div class="list-container-overlay">
+            <h3><span>Bachelor's degree in Computer Science</span> - August 2016</h3>
+            <h3>University of Minnesota, Twin Cities - Minneapolis MN, USA</h3>
+          </div>
+        </div>
+        <div class="experience-container list-container container">
+          <div class="list-container-overlay">
+            <h3><span>Eagle Scout Rank</span> - September 2012</h3>
+            <h3>Boy Scouts of America, Troop 82 - Rochester MN, USA</h3>
+          </div>
+        </div>
+        <div class="experience-container list-container container">
+          <div class="list-container-overlay">
+            <h3><span>High School Diploma</span> - May 2012</h3>
+            <h3>Century High School - Rochester MN, USA</h3>
           </div>
         </div>
       </section>
